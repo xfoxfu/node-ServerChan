@@ -5,7 +5,24 @@ Install
 -----
 
 ```
-npm install node-serverchan --save
+npm install serverchan --save
+```
+
+Usage
+-----
+
+```TypeScript
+import ServerChanClient = require("serverchan");
+
+// create with SCKEY parameter
+let client = new ServerChanClient("SCKEY"); // replace SCKEY with your own
+// create with SCKEY in environment (SERVERCHAN_SCKEY)
+let client = new ServerChanClient();
+
+client.sendMessage("title") // returns Promise
+  .then(() => { console.log("sent"); });
+client.sendMessage("title", "content") // returns Promise
+  .then(() => { console.log("sent"); });
 ```
 
 License

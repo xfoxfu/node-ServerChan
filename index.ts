@@ -1,4 +1,31 @@
 /// <reference path="./references.d.ts" />
 "use strict";
 
-export = () => { throw new Error("Not implemented!"); };
+import request = require("superagent");
+
+export = class ServerChanClient {
+  private _sckey: string;
+  constructor(sckey?: string) {
+    if (sckey) {
+      this._sckey = sckey;
+    } else if (process.env.SERVERCHAN_SCKEY) {
+      this._sckey = process.env.SERVERCHAN_SCKEY;
+    } else {
+      throw new Error("SCKEY not found!");
+    }
+  };
+  async sendMessage(title: string, content?: string) {
+    let result = await request(`http://sc.ftqq.com/${this._sckey}.send`)
+      .use(require("superagent-promise-plugin"))
+      .query({
+        text: title,
+        desp: content
+      })
+      .end();
+    let json_result = JSON.parse(result.body);
+    if (json_result.errno !== 0) throw new Error(json_result.errmsg);
+  };
+  get sckey() {
+    return this._sckey;
+  };
+};
