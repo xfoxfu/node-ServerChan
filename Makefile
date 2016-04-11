@@ -1,4 +1,4 @@
 postinstall:
-	node_modules/.bin/typings install -so
+	typings install -so
 compile:
-	node_modules/.bin/tsc
+	tsc
