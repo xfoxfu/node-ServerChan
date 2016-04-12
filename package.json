@@ -1,12 +1,12 @@
 {
-  "name": "node-serverchan",
-  "version": "0.1.0",
+  "name": "serverchan",
+  "version": "0.2.0",
   "description": "Node.js SDK for ServerChan.",
   "main": "index.js",
   "scripts": {
-    "test": "node_modules/.bin/mocha",
-    "postinstall": "make postinstall compile",
-    "pretest": "make compile"
+    "test": "mocha",
+    "postinstall": "typings install -so && tsc",
+    "pretest": "tsc"
   },
   "repository": {
     "type": "git",
@@ -23,14 +23,15 @@
   },
   "homepage": "https://github.com/coderfox/node-ServerChan#readme",
   "dependencies": {
-    "superagent": "^1.8.0-beta.2",
+    "request-promise": "^2.0.1",
     "typescript": "^1.8.2",
     "typings": "^0.6.8"
   },
   "devDependencies": {
     "chai": "^3.5.0",
     "cz-conventional-changelog": "^1.1.5",
-    "mocha": "^2.4.5"
+    "mocha": "^2.4.5",
+    "nock": "^8.0.0"
   },
   "config": {
     "commitizen": {

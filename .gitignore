@@ -1,15 +1,10 @@
+.vscode
+
 # Bower
 bower_components
 
-# Config files
-config/development.yml
-config/local.yml
-
 # Compiled JavaScript
 *.js
-
-# Exclude Jakefile
-!/Jakefile.js
 
 # tsd installed
 typings
