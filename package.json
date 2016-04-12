@@ -30,7 +30,8 @@
   "devDependencies": {
     "chai": "^3.5.0",
     "cz-conventional-changelog": "^1.1.5",
-    "mocha": "^2.4.5"
+    "mocha": "^2.4.5",
+    "nock": "^8.0.0"
   },
   "config": {
     "commitizen": {

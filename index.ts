@@ -19,8 +19,7 @@ export = class ServerChanClient {
       qs: {
         text: title,
         desp: content
-      },
-      json: true
+      }
     }));
     if (result.errno !== 0) throw new Error(result.errmsg);
   };

@@ -4,7 +4,8 @@
     "request": "registry:npm/request"
   },
   "devDependencies": {
-    "chai": "github:typed-typings/npm-chai"
+    "chai": "github:typed-typings/npm-chai",
+    "nock": "registry:npm/nock#0.7.0+20160211003958"
   },
   "ambientDependencies": {
     "mocha": "github:DefinitelyTyped/DefinitelyTyped/mocha/mocha.d.ts",
