@@ -1,17 +1,14 @@
 {
   "name": "node-serverchan",
   "dependencies": {
-    "request": "registry:npm/request#2.69.0+20160304121250"
+    "request": "registry:npm/request"
   },
   "devDependencies": {
-    "chai": "github:typed-typings/npm-chai#f74b0d35e090039f303f6fef184c6f102408a9fc"
+    "chai": "github:typed-typings/npm-chai"
   },
   "ambientDependencies": {
-    "mocha": "github:DefinitelyTyped/DefinitelyTyped/mocha/mocha.d.ts#d6dd320291705694ba8e1a79497a908e9f5e6617",
-    "node": "registry:dt/node#4.0.0+20160330064709",
-    "request-promise": "registry:dt/request-promise#0.4.2+20160316155526"
-  },
-  "ambientDevDependencies": {
-    "chai": "github:DefinitelyTyped/DefinitelyTyped/chai/chai.d.ts#1914a00b3c740348dae407ee0d2be89b0b58ad7f"
+    "mocha": "github:DefinitelyTyped/DefinitelyTyped/mocha/mocha.d.ts",
+    "node": "registry:dt/node",
+    "request-promise": "registry:dt/request-promise"
   }
 }
