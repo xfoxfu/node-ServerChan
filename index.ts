@@ -1,7 +1,7 @@
 /// <reference path="./references.d.ts" />
 "use strict";
 
-import request = require("superagent");
+import request = require("request-promise");
 
 export = class ServerChanClient {
   private _sckey: string;
@@ -15,15 +15,14 @@ export = class ServerChanClient {
     }
   };
   async sendMessage(title: string, content?: string) {
-    let result = await request(`http://sc.ftqq.com/${this._sckey}.send`)
-      .use(require("superagent-promise-plugin"))
-      .query({
+    let result = JSON.parse(await request(`http://sc.ftqq.com/${this._sckey}.send`, {
+      qs: {
         text: title,
         desp: content
-      })
-      .end();
-    let json_result = JSON.parse(result.body);
-    if (json_result.errno !== 0) throw new Error(json_result.errmsg);
+      },
+      json: true
+    }));
+    if (result.errno !== 0) throw new Error(result.errmsg);
   };
   get sckey() {
     return this._sckey;
