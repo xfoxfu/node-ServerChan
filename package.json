@@ -1,6 +1,6 @@
 {
   "name": "serverchan",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Node.js SDK for ServerChan.",
   "main": "index.js",
   "scripts": {
@@ -23,8 +23,7 @@
   },
   "homepage": "https://github.com/coderfox/node-ServerChan#readme",
   "dependencies": {
-    "superagent": "^1.8.0-beta.2",
-    "superagent-promise-plugin": "^2.1.0",
+    "request-promise": "^2.0.1",
     "typescript": "^1.8.2",
     "typings": "^0.6.8"
   },
