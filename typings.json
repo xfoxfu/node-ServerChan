@@ -4,12 +4,14 @@
     "request": "registry:npm/request#2.69.0+20160304121250"
   },
   "devDependencies": {
-    "chai": "github:typed-typings/npm-chai",
+    "chai": "registry:npm/chai#3.5.0+20160415060238",
     "nock": "registry:npm/nock#0.7.0+20160211003958"
   },
   "ambientDependencies": {
-    "mocha": "github:DefinitelyTyped/DefinitelyTyped/mocha/mocha.d.ts",
     "node": "registry:dt/node",
     "request-promise": "registry:dt/request-promise"
+  },
+  "ambientDevDependencies": {
+    "mocha": "registry:dt/mocha#2.2.5+20160317120654"
   }
 }
