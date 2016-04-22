@@ -2,8 +2,6 @@ language: node_js
 node_js:
   - 5
   - 4
-services:
-  - mongodb
 script:
   - npm test
 compiler: clang-3.6
@@ -14,8 +12,6 @@ addons:
     sources:
       - llvm-toolchain-precise-3.6
       - ubuntu-toolchain-r-test
-      - mongodb-3.0-precise
     packages:
       - clang-3.6
       - g++-4.8
-      - mongodb-org-server
