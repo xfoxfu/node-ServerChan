@@ -23,9 +23,9 @@
   },
   "homepage": "https://github.com/coderfox/node-ServerChan#readme",
   "dependencies": {
-    "request-promise": "^2.0.1",
+    "request-promise": "^3.0.0",
     "typescript": "^1.8.2",
-    "typings": "^0.6.8"
+    "typings": "^0.8.1"
   },
   "devDependencies": {
     "chai": "^3.5.0",
