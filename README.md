@@ -1,6 +1,8 @@
 node-ServerChan
 =====
 
+[![Build Status](https://travis-ci.org/coderfox/node-ServerChan.svg?branch=master)](https://travis-ci.org/coderfox/node-ServerChan)
+
 Install
 -----
 
