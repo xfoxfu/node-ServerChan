@@ -1,25 +1,21 @@
 {
-    "version": "1.8.2",
-    "compilerOptions": {
-        "target": "es6",
-        "module": "commonjs",
-        "isolatedModules": false,
-        "experimentalDecorators": true,
-        "emitDecoratorMetadata": true,
-        "declaration": false,
-        "noImplicitAny": false,
-        "removeComments": true,
-        "noLib": false,
-        "preserveConstEnums": true,
-        "suppressImplicitAnyIndexErrors": true
-    },
-    "exclude": [
-      ".vscode",
-      "logs",
-      "node_modules",
-      "bower_components",
-      "typings/browser",
-      "typings/main",
-      "typings/browser.d.ts"
-    ]
+  "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
+    "strict": true,
+    "isolatedModules": false,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "declaration": false,
+    "noImplicitAny": false,
+    "removeComments": true,
+    "noLib": false,
+    "preserveConstEnums": true,
+    "suppressImplicitAnyIndexErrors": true
+  },
+  "exclude": [
+    ".vscode",
+    "logs",
+    "node_modules"
+  ]
 }

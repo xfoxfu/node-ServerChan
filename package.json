@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha",
-    "postinstall": "typings install -so && tsc",
+    "postinstall": "tsc",
     "pretest": "tsc"
   },
   "repository": {
@@ -26,18 +26,19 @@
     "@types/node": "^7.0.29",
     "@types/request": "^0.0.43",
     "@types/request-promise": "^4.1.33",
-    "request-promise": "^3.0.0",
-    "typescript": "^1.8.2",
-    "typings": "^0.8.1"
+    "request": "^2.81.0",
+    "request-promise": "^4.2.1",
+    "typescript": "^2.3.4",
+    "typings": "^2.1.1"
   },
   "devDependencies": {
     "@types/chai": "^4.0.0",
     "@types/mocha": "^2.2.41",
     "@types/nock": "^8.2.1",
-    "chai": "^3.5.0",
-    "cz-conventional-changelog": "^1.1.5",
-    "mocha": "^2.4.5",
-    "nock": "^8.0.0"
+    "chai": "^4.0.2",
+    "cz-conventional-changelog": "^2.0.0",
+    "mocha": "^3.4.2",
+    "nock": "^9.0.13"
   },
   "config": {
     "commitizen": {
