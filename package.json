@@ -23,11 +23,17 @@
   },
   "homepage": "https://github.com/coderfox/node-ServerChan#readme",
   "dependencies": {
+    "@types/node": "^7.0.29",
+    "@types/request": "^0.0.43",
+    "@types/request-promise": "^4.1.33",
     "request-promise": "^3.0.0",
     "typescript": "^1.8.2",
     "typings": "^0.8.1"
   },
   "devDependencies": {
+    "@types/chai": "^4.0.0",
+    "@types/mocha": "^2.2.41",
+    "@types/nock": "^8.2.1",
     "chai": "^3.5.0",
     "cz-conventional-changelog": "^1.1.5",
     "mocha": "^2.4.5",

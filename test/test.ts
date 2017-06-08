@@ -1,4 +1,3 @@
-/// <reference path="../references.d.ts" />
 "use strict";
 
 import ServerChan = require("../");
