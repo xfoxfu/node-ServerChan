@@ -2,7 +2,7 @@
 
 import request = require("request-promise");
 
-export = class ServerChanClient {
+class ServerChanClient {
   private _sckey: string;
   constructor(sckey?: string) {
     if (sckey) {
@@ -26,3 +26,5 @@ export = class ServerChanClient {
     return this._sckey;
   };
 };
+
+export = ServerChanClient;

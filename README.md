@@ -1,7 +1,12 @@
 node-ServerChan
 =====
 
-[![Build Status](https://travis-ci.org/coderfox/node-ServerChan.svg?branch=master)](https://travis-ci.org/coderfox/node-ServerChan)
+[![Greenkeeper badge](https://badges.greenkeeper.io/coderfox/node-ServerChan.svg)](https://greenkeeper.io/)
+[![Build Status](https://img.shields.io/travis/coderfox/node-ServerChan.svg?style=flat-square)](https://travis-ci.org/coderfox/node-ServerChan)
+[![Coveralls](https://img.shields.io/coveralls/coderfox/node-ServerChan.svg?style=flat-square)](https://coveralls.io/github/coderfox/node-ServerChan)
+[![license](https://img.shields.io/github/license/coderfox/node-ServerChan.svg?style=flat-square)](https://github.com/coderfox/node-ServerChan/blob/master/LICENSE)
+[![npm](https://img.shields.io/npm/dt/node-ServerChan.svg?style=flat-square)](https://www.npmjs.com/package/node-ServerChan)
+[![npm](https://img.shields.io/npm/v/node-ServerChan.svg?style=flat-square)](https://www.npmjs.com/package/node-ServerChan)
 
 Install
 -----
