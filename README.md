@@ -1,6 +1,8 @@
 node-ServerChan
 =====
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/coderfox/node-ServerChan.svg)](https://greenkeeper.io/)
+
 [![Build Status](https://travis-ci.org/coderfox/node-ServerChan.svg?branch=master)](https://travis-ci.org/coderfox/node-ServerChan)
 
 Install
