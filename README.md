@@ -5,8 +5,8 @@ node-ServerChan
 [![Build Status](https://img.shields.io/travis/coderfox/node-ServerChan.svg?style=flat-square)](https://travis-ci.org/coderfox/node-ServerChan)
 [![Coveralls](https://img.shields.io/coveralls/coderfox/node-ServerChan.svg?style=flat-square)](https://coveralls.io/github/coderfox/node-ServerChan)
 [![license](https://img.shields.io/github/license/coderfox/node-ServerChan.svg?style=flat-square)](https://github.com/coderfox/node-ServerChan/blob/master/LICENSE)
-[![npm](https://img.shields.io/npm/dt/node-ServerChan.svg?style=flat-square)](https://www.npmjs.com/package/node-ServerChan)
-[![npm](https://img.shields.io/npm/v/node-ServerChan.svg?style=flat-square)](https://www.npmjs.com/package/node-ServerChan)
+[![npm](https://img.shields.io/npm/dt/serverchan.svg?style=flat-square)](https://www.npmjs.com/package/serverchan)
+[![npm](https://img.shields.io/npm/v/serverchan.svg?style=flat-square)](https://www.npmjs.com/package/serverchan)
 
 Install
 -----
