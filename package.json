@@ -1,6 +1,6 @@
 {
   "name": "serverchan",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "description": "Node.js SDK for ServerChan.",
   "main": "index.js",
   "scripts": {
