@@ -1,6 +1,4 @@
-# TypeScript ignores
-*.js
-*.js.map
+dist
 
 # Unit Test ignores
 config.yaml

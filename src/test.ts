@@ -1,6 +1,6 @@
 "use strict";
 
-import ServerChan = require("../");
+import ServerChan from "./";
 import chai = require("chai");
 const expect = chai.expect;
 // store the original sckey
@@ -50,7 +50,7 @@ describe("#sendMessage", () => {
       await sc.sendMessage("");
       throw new Error("No error thrown.");
     } catch (err) {
-      expect(err.message).to.eql("不要重复发送同样的内容");
+      expect(err?.["message"]).to.eql("不要重复发送同样的内容");
     }
   });
 });

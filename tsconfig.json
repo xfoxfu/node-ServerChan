@@ -9,11 +9,11 @@
     "removeComments": true,
     "noLib": false,
     "preserveConstEnums": true,
-    "inlineSourceMap": true
+    "inlineSourceMap": true,
+    "outDir": "./dist",
   },
-  "exclude": [
-    ".vscode",
-    "logs",
-    "node_modules"
+  "files": [
+    "src/index.ts",
+    "src/test.ts"
   ]
 }
