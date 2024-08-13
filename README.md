@@ -1,8 +1,7 @@
 # node-ServerChan
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/coderfox/node-ServerChan.svg)](https://greenkeeper.io/)
-[![Build Status](https://img.shields.io/travis/coderfox/node-ServerChan.svg?style=flat-square)](https://travis-ci.org/coderfox/node-ServerChan)
-[![Coveralls](https://img.shields.io/coveralls/coderfox/node-ServerChan.svg?style=flat-square)](https://coveralls.io/github/coderfox/node-ServerChan)
+[![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/xfoxfu/node-ServerChan/ci.yml?style=flat-square)](https://github.com/xfoxfu/node-ServerChan/actions/workflows/ci.yml)
+[![Codecov](https://img.shields.io/codecov/c/github/xfoxfu/node-ServerChan?style=flat-square)](https://app.codecov.io/gh/xfoxfu/node-ServerChan)
 [![license](https://img.shields.io/github/license/coderfox/node-ServerChan.svg?style=flat-square)](https://github.com/coderfox/node-ServerChan/blob/master/LICENSE)
 [![npm](https://img.shields.io/npm/dt/serverchan.svg?style=flat-square)](https://www.npmjs.com/package/serverchan)
 [![npm](https://img.shields.io/npm/v/serverchan.svg?style=flat-square)](https://www.npmjs.com/package/serverchan)
@@ -16,7 +15,7 @@ npm install serverchan --save
 ## Usage
 
 ```TypeScript
-import ServerChanClient = require("serverchan");
+import ServerChanClient from "serverchan";
 
 // create with SCKEY parameter
 let client = new ServerChanClient("SCKEY"); // replace SCKEY with your own
@@ -33,7 +32,7 @@ client.sendMessage("title", "content") // returns Promise
 
 ```
 The MIT License (MIT)
-Copyright (c) 2016 coderfox
+Copyright (c) 2016-2024 Yuze Fu (xfoxfu)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
