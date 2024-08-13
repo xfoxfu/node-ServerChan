@@ -26,25 +26,25 @@ describe("constructor", () => {
 });
 describe("#sendMessage", () => {
   it("(title)", async () => {
-    nock("http://sc.ftqq.com")
+    nock("https://sctapi.ftqq.com")
       .get(/[A-Za-z0-9]*\.send/)
-      .reply(200, { "errno": 0, "errmsg": "success", "dataset": "done" });
+      .reply(200, { errno: 0, errmsg: "success", dataset: "done" });
     process.env.SERVERCHAN_SCKEY = processKey;
     let sc = new ServerChan();
     await sc.sendMessage("build test " + Date.now().toString());
   });
   it("(title, content)", async () => {
-    nock("http://sc.ftqq.com")
+    nock("https://sctapi.ftqq.com")
       .get(/[A-Za-z0-9]*\.send/)
-      .reply(200, { "errno": 0, "errmsg": "success", "dataset": "done" });
+      .reply(200, { errno: 0, errmsg: "success", dataset: "done" });
     process.env.SERVERCHAN_SCKEY = processKey;
     let sc = new ServerChan();
     await sc.sendMessage("build test " + Date.now().toString(), "test");
   });
   it("(title, content?) error should throw", async () => {
-    nock("http://sc.ftqq.com")
+    nock("https://sctapi.ftqq.com")
       .get(/[A-Za-z0-9]*\.send/)
-      .reply(200, { "errno": 1024, "errmsg": "不要重复发送同样的内容" });
+      .reply(200, { errno: 1024, errmsg: "不要重复发送同样的内容" });
     let sc = new ServerChan();
     try {
       await sc.sendMessage("");
