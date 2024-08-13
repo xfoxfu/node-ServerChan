@@ -9,8 +9,8 @@
     "dist/index.d.ts"
   ],
   "scripts": {
-    "test": "c8 --all --src dist --reporter=text-summary ava src/test.ts",
-    "test:cov": "c8 --all --src dist report --reporter=text-lcov ava src/test.ts > coverage/lcov.info",
+    "test": "c8 -n dist/index.js --reporter=text-summary ava src/test.ts",
+    "test:cov": "c8 report -n dist/index.js --reporter=text-lcov > coverage/lcov.info",
     "prepare": "tsc"
   },
   "repository": {
