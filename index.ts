@@ -14,7 +14,7 @@ class ServerChanClient {
     }
   };
   async sendMessage(title: string, content?: string) {
-    let result = JSON.parse(await request(`http://sc.ftqq.com/${this._sckey}.send`, {
+    let result = JSON.parse(await request(`https://sctapi.ftqq.com/${this._sckey}.send`, {
       qs: {
         text: title,
         desp: content
