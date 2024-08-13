@@ -30,6 +30,7 @@
   "engines": {
     "node": ">=18.12.1"
   },
+  "packageManager": "pnpm@9.7.0",
   "devDependencies": {
     "@ava/typescript": "^5.0.0",
     "@types/node": "^18.19.44",
