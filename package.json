@@ -9,10 +9,9 @@
     "dist/index.d.ts"
   ],
   "scripts": {
-    "test": "nyc mocha dist/test.js",
-    "test-cov": "nyc -r lcovonly mocha dist/test.js",
-    "prepare": "tsc",
-    "pretest": "tsc"
+    "test": "c8 --all --src dist --reporter=text-summary ava src/test.ts",
+    "test:cov": "c8 --all --src dist report --reporter=text-lcov ava src/test.ts > coverage/lcov.info",
+    "prepare": "tsc"
   },
   "repository": {
     "type": "git",
@@ -31,21 +30,22 @@
   "engines": {
     "node": ">=18.12.1"
   },
-  "dependencies": {},
   "devDependencies": {
-    "@types/chai": "^4.0.0",
-    "@types/mocha": "^2.2.41",
-    "@types/nock": "^8.2.1",
+    "@ava/typescript": "^5.0.0",
     "@types/node": "^18.19.44",
-    "chai": "^4.0.2",
-    "coveralls": "^2.13.1",
-    "mocha": "^3.4.2",
-    "mocha-lcov-reporter": "^1.3.0",
-    "nock": "^9.0.13",
-    "nyc": "^11.0.2",
+    "ava": "^6.1.3",
+    "msw": "^2.3.5",
     "typescript": "^5.5.4"
   },
-  "greenkeeper": {
-    "ignore": []
+  "ava": {
+    "typescript": {
+      "rewritePaths": {
+        "src/": "dist/"
+      },
+      "compile": "tsc"
+    }
+  },
+  "dependencies": {
+    "c8": "^10.1.2"
   }
 }
