@@ -6,7 +6,7 @@
   "scripts": {
     "test": "nyc mocha",
     "test-cov": "nyc -r lcovonly mocha",
-    "postinstall": "tsc",
+    "prepare": "tsc",
     "pretest": "tsc"
   },
   "repository": {
