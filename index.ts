@@ -12,19 +12,21 @@ class ServerChanClient {
     } else {
       throw new Error("SCKEY not found!");
     }
-  };
+  }
   async sendMessage(title: string, content?: string) {
-    let result = JSON.parse(await request(`https://sctapi.ftqq.com/${this._sckey}.send`, {
-      qs: {
-        text: title,
-        desp: content
-      }
-    }));
+    let result = JSON.parse(
+      await request(`https://sctapi.ftqq.com/${this._sckey}.send`, {
+        qs: {
+          text: title,
+          desp: content,
+        },
+      })
+    );
     if (result.errno !== 0) throw new Error(result.errmsg);
-  };
+  }
   get sckey() {
     return this._sckey;
-  };
-};
+  }
+}
 
 export = ServerChanClient;

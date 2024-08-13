@@ -1,5 +1,4 @@
-node-ServerChan
-=====
+# node-ServerChan
 
 [![Greenkeeper badge](https://badges.greenkeeper.io/coderfox/node-ServerChan.svg)](https://greenkeeper.io/)
 [![Build Status](https://img.shields.io/travis/coderfox/node-ServerChan.svg?style=flat-square)](https://travis-ci.org/coderfox/node-ServerChan)
@@ -8,15 +7,13 @@ node-ServerChan
 [![npm](https://img.shields.io/npm/dt/serverchan.svg?style=flat-square)](https://www.npmjs.com/package/serverchan)
 [![npm](https://img.shields.io/npm/v/serverchan.svg?style=flat-square)](https://www.npmjs.com/package/serverchan)
 
-Install
------
+## Install
 
 ```
 npm install serverchan --save
 ```
 
-Usage
------
+## Usage
 
 ```TypeScript
 import ServerChanClient = require("serverchan");
@@ -32,8 +29,7 @@ client.sendMessage("title", "content") // returns Promise
   .then(() => { console.log("sent"); });
 ```
 
-License
------
+## License
 
 ```
 The MIT License (MIT)
