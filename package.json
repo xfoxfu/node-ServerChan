@@ -11,18 +11,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/coderfox/node-ServerChan.git"
+    "url": "git+https://github.com/xfoxfu/node-ServerChan.git"
   },
   "keywords": [
     "ServerChan",
     "SDK"
   ],
-  "author": "coderfox",
+  "author": "xfoxfu",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/coderfox/node-ServerChan/issues"
+    "url": "https://github.com/xfoxfu/node-ServerChan/issues"
   },
-  "homepage": "https://github.com/coderfox/node-ServerChan#readme",
+  "homepage": "https://github.com/xfoxfu/node-ServerChan#readme",
   "dependencies": {
     "@types/node": "^7.0.29",
     "@types/request": "^0.0.43",
