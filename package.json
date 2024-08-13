@@ -23,6 +23,9 @@
     "url": "https://github.com/xfoxfu/node-ServerChan/issues"
   },
   "homepage": "https://github.com/xfoxfu/node-ServerChan#readme",
+  "engines": {
+    "node": ">=18.12.1"
+  },
   "dependencies": {
     "@types/node": "^7.0.29",
     "@types/request": "^0.0.43",
